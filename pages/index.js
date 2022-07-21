@@ -1,4 +1,3 @@
-import Navbar from "../components/navbar/navbar.component";
 import { ThemeProvider } from "styled-components";
 import theme from "../styles/theme";
 import GlobalStyles from "../styles/global.js";
@@ -15,6 +14,7 @@ export default function Home() {
           <title>Stijn Aa</title>
         </Head>
         <header>
+          <h1>Hello world</h1>
         </header>
         <main>
         </main>
