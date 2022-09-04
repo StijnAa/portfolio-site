@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-css-tags */
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
+import Gtag from "../public/scripts/gtag";
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -45,6 +46,7 @@ export default class MyDocument extends Document {
           />
           <link href="/icofont/icofont.min.css" rel="stylesheet" />
           <link href="/icofont/fonts/icofont.woff2" rel="stylesheet" />
+          <Gtag />
         </Head>
         <body>
           <Main />
