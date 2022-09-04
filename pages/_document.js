@@ -46,8 +46,8 @@ export default class MyDocument extends Document {
           />
           <link href="/icofont/icofont.min.css" rel="stylesheet" />
           <link href="/icofont/fonts/icofont.woff2" rel="stylesheet" />
-          <Gtag />
         </Head>
+        <Gtag />
         <body>
           <Main />
           <NextScript />
