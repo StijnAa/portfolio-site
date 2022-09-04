@@ -21,7 +21,7 @@ export default function Kabeltjesshop() {
             "The concept was a webshop with no clutter. Eliminating everting I don’t like about today’s webshops. So no signing up, no coupons codes and also no visual clutter. The order flow consists of the bare minimum.",
             "Only 3 questions. How many cables, where to send them and what bank do you use.",
           ]}
-          src="/img/kabelshopHomepage.png"
+          src="/img/kabelshopHomepage.jpg"
         />
         <Card
           texts={[
@@ -29,7 +29,7 @@ export default function Kabeltjesshop() {
             "I completed the webshop layout for desktop screens but failed converting it to mobile. I also stopped developing the backend fulfilment part of the webshop because I got distracted and didn’t know how to make a sql server.",
             "I still believe in the concept but I’m looking for a better use case.",
           ]}
-          src="/img/kabelshopAmount.png"
+          src="/img/kabelshopAmount.jpg"
         />
       </Main>
     </>

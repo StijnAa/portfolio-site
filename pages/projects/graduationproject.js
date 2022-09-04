@@ -25,7 +25,7 @@ export default function GraduationProject() {
             "The installation accomplices this with a few elements. First there is the chair. The chair forces you to commit to the installation. You can’t just wait and watch without sitting down. When you sit down a scroll of Instagram like posts start rolling. This sets the expectation of an interesting experience.",
             "The scroll slowlsy speeds up and after some time this interesting experience is gradually taken away from you. It does this by slowly mixing in ever more blanc images. From this point on the installation tests your willingness watch hypnotic blanc pages flash by, hoping for an interesting image.",
           ]}
-          src="/img/lazyloading Img.png"
+          src="/img/lazyloading Img.jpg"
         />
       </Main>
     </>

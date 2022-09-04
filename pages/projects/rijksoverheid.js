@@ -19,7 +19,7 @@ export default function Rijksoverheid() {
             "For the online communications, we are working with a platform which serves as the base for over 500 department or topic-based government websites.",
             "As a front-end developer, I'm part of the team that is responsible for the development of this platform.",
           ]}
-          src="/img/rijksoverheid.png"
+          src="/img/rijksoverheid.jpg"
         />
         <Card
           texts={[
@@ -27,7 +27,7 @@ export default function Rijksoverheid() {
             "In addition, as part of the accessibility working group, I'm actively contributes to keeping the platform accessible for everyone.",
             ,
           ]}
-          src="/img/ncsc.png"
+          src="/img/ncsc.jpg"
         />
       </Main>
     </>
