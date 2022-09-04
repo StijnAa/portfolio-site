@@ -201,7 +201,7 @@ const Nav = (props) => {
             exit="contentOut"
           >
             <Link scroll={false} href="/projects/graduationexperiment">
-              Don't look - Graduation Experiment (2019)
+              Dont look - Graduation Experiment (2019)
             </Link>
           </motion.li>
 
