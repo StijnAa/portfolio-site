@@ -12,14 +12,19 @@
     "@react-aria/button": "^3.5.1",
     "@react-aria/link": "^3.3.1",
     "@react-aria/ssr": "^3.2.0",
+    "framer-motion": "^7.0.0",
+    "lottie-react": "^2.3.1",
     "next": "12.2.0",
     "react": "18.2.0",
+    "react-aria": "^3.18.0",
     "react-dom": "18.2.0",
+    "react-stately": "^3.16.0",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^2.0.7",
     "eslint": "8.19.0",
-    "eslint-config-next": "12.2.0"
+    "eslint-config-next": "12.2.0",
+    "eslint-config-prettier": "^8.5.0"
   }
 }

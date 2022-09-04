@@ -1,16 +1,26 @@
 import { createGlobalStyle, GlobalStyleComponent } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
+    
 
     *{
         box-sizing: border-box;
-        font-family: 'Work Sans', sans-serif;
+        font-family: 'Work Sans','Josefin Sans', sans-serif;
         font-size: large;
         font-weight: 500;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
     }
+
     body{
+        color: ${(props) => props.theme.colors.text};
         margin: 0;
-        background-color: #eee;
+        background-color: #fff;
+        overflow: auto;
+        background-color: ${(props) => props.theme.colors.bg};
     }
     img{
         max-width: 100%;
@@ -27,7 +37,7 @@ const GlobalStyles = createGlobalStyle`
         padding-inline-start: 0;
     }
     a {
-        color: blue;
+        color: #322e52;
         text-decoration: none; 
     }
     button {
