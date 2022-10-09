@@ -12,6 +12,9 @@ const GlobalStyles = createGlobalStyle`
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
     }
+    html{
+        overflow: ${(props) => props.theme.overflow};
+    }
 
     body{
         color: ${(props) => props.theme.colors.text};
