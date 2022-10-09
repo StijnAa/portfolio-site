@@ -13,7 +13,7 @@ export default function GraduationProject() {
     <>
       <Main>
         <Card
-          title="Lazyloading"
+          title="Lazy loading"
           underline="HKU Graduation project"
           texts={[
             "For my graduation project I developed interesting installations centred around curiosity. This is my final installation with which I graduated. It’s about a tug of war between curiosity and wasting time.",

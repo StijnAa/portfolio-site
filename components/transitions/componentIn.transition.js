@@ -16,7 +16,7 @@ const ComponentIn = ({ children, distance = 40 }) => {
       y: 0,
       transition: {
         duration: 0.7,
-        delay: 0.3,
+        delay: 0.1,
       },
     },
   };

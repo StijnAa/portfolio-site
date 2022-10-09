@@ -21,15 +21,17 @@ const NavContainer = styled(motion.section)`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 35px 10px 0 10px;
     ul {
       text-align: center;
     }
 
     li {
-      margin-bottom: 10px;
+      margin-bottom: 16px;
     }
     a {
       font-weight: 400;
+      font-size: 0.8rem;
     }
     h2 {
       font-weight: 500;

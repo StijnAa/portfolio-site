@@ -19,7 +19,7 @@ export default function AdDetection() {
             "Let´s be honest, commercialbreaks on television are way too long. I don’t watch a lot of linear tv but when I do it always surprises me how long and loud they still are.",
             "The goal of this project is to make a system that detects when the commercial break starts and ends. And when it does it mutes the audio channel and starts playing music from Spotify",
           ]}
-          src="/img/adblockerDemo.gif"
+          video="/img/detection.mp4"
         />
         <Card
           texts={[

@@ -19,7 +19,7 @@ export default function GraduationExperiment() {
             "Durring my graduation project I developed a couple of interesting installations centred around curiosity. This experiment was my favourite because of its simplicity and the funny reactions it produced.",
             "The premise: you always want to know what other people are looking at. So this installation takes advantages of that.",
           ]}
-          src="/img/box.gif"
+          video="/img/box.mp4"
         />
         <Card
           texts={[

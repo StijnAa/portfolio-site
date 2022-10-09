@@ -53,6 +53,14 @@ const ImageContainer = styled.div`
     height: ${imgHeight * 0.8}px;
   }
   box-shadow: 0px 5px 22px 0px rgb(0 0 0 / 5%);
+  video {
+    width: ${imgHeight}px;
+    height: ${imgHeight}px;
+    @media only screen and (max-width: ${({ theme }) => theme.tablet}) {
+      width: ${imgHeight * 0.8}px;
+      height: ${imgHeight * 0.8}px;
+    }
+  }
 `;
 const TextContainer = styled.div`
   width: 500px;
@@ -67,6 +75,7 @@ const TextContainer = styled.div`
     h2 {
       font-weight: 700;
       font-size: 65px;
+      word-wrap: break-word;
     }
     a {
       font-size: 20px;
@@ -83,26 +92,46 @@ const TextContainer = styled.div`
       padding-top: 10px;
     }
   }
+  @media only screen and (max-width: ${({ theme }) => theme.tablet}) {
+    width: auto;
+  }
 `;
 const StyledImage = styled(Image)``;
 
 const Card = (props) => {
   return (
     <StyledCard>
-      {props.src && (
+      {props.src || props.video ? (
         <FlexContainer>
           <ComponentIn distance={80}>
             <ImageContainer>
-              <StyledImage
-                src={props.src}
-                alt="alt"
-                width={imgHeight}
-                height={imgHeight}
-                layout="responsive"
-              />
+              {props.src && (
+                <StyledImage
+                  src={props.src}
+                  alt="alt"
+                  width={imgHeight}
+                  height={imgHeight}
+                  layout="responsive"
+                />
+              )}
+              {props.video && (
+                <video
+                  alt="alt"
+                  width={imgHeight}
+                  height={imgHeight}
+                  layout="responsive"
+                  autoPlay
+                  loop
+                  muted
+                >
+                  <source src={props.video} type="video/mp4" />
+                </video>
+              )}
             </ImageContainer>
           </ComponentIn>
         </FlexContainer>
+      ) : (
+        ""
       )}
       <FlexContainer>
         <ComponentIn distance={120}>

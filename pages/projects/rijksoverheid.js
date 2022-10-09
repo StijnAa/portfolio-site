@@ -13,7 +13,8 @@ export default function Rijksoverheid() {
     <>
       <Main>
         <Card
-          title="Platform Rijksoverheid"
+          title="PRO"
+          underline="Platform Rijksoverheid"
           texts={[
             "The Ministry of General Affairs’ Public Information and Communications Service (DPC) helps central government communicate with the public. ",
             "For the online communications, we are working with a platform which serves as the base for over 500 department or topic-based government websites.",
