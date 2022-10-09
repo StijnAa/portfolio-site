@@ -6,23 +6,29 @@ import { SSRProvider } from "@react-aria/ssr";
 import { ThemeProvider } from "styled-components";
 import MenuButton from "../components/menuButton.component";
 import GlobalStyles from "../styles/global";
-import { theme, theme2 } from "../styles/theme";
+import { hidden, auto } from "../styles/theme";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Head from "next/head";
+import styled from "styled-components";
 
 function App({ Component, pageProps }) {
-  const [displayNav, setNav] = useState(false);
+  const [displayNav, setNavState] = useState(false);
   const handleMenuButtonPress = () => {
-    setNav(!displayNav);
+    setNav();
   };
-  const [themeState, setThemeState] = useState(theme2);
+  const [themeState, setThemeState] = useState(auto);
 
   const router = useRouter();
 
+  const setNav = () => {
+    setNavState(!displayNav);
+    setThemeState(!displayNav ? hidden : auto);
+  };
+
   useEffect(() => {
     if (displayNav) {
-      setNav(!displayNav);
+      setNav();
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router.asPath]);

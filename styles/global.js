@@ -1,8 +1,6 @@
 import { createGlobalStyle, GlobalStyleComponent } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-    
-
     *{
         box-sizing: border-box;
         font-family: 'Work Sans','Josefin Sans', sans-serif;
@@ -19,8 +17,10 @@ const GlobalStyles = createGlobalStyle`
         color: ${(props) => props.theme.colors.text};
         margin: 0;
         background-color: #fff;
-        overflow: auto;
+        overflow: ${(props) => props.theme.overflow};
         background-color: ${(props) => props.theme.colors.bg};
+
+
     }
     img{
         max-width: 100%;

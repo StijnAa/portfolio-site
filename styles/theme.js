@@ -1,18 +1,19 @@
-export const theme = {
-  colors: {
-    bg: "#fff",
-
-    text: "#fe0222",
-  },
-  tablet: "1200px",
-  mobile: "787px",
-};
-
-export const theme2 = {
+export const hidden = {
   colors: {
     bg: "#fff",
     text: "#322e52;",
   },
   tablet: "1200px",
   mobile: "787px",
+  overflow: "hidden",
+};
+
+export const auto = {
+  colors: {
+    bg: "#fff",
+    text: "#322e52;",
+  },
+  tablet: "1200px",
+  mobile: "787px",
+  overflow: "auto",
 };
