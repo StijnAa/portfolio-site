@@ -13,7 +13,7 @@ export default function Overhoorbot() {
     <>
       <Main>
         <Card
-          title="Overhoorbot"
+          title="Overhoor bot"
           link="https://www.youtube.com/watch?v=ZJFeEkQPba8"
           linkText="A google home app to help kids study for tests"
           texts={[
