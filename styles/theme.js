@@ -1,7 +1,7 @@
 export const hidden = {
   colors: {
     bg: "#fff",
-    text: "#322e52;",
+    text: "#1f1f24;",
   },
   tablet: "1200px",
   mobile: "787px",
@@ -11,7 +11,7 @@ export const hidden = {
 export const auto = {
   colors: {
     bg: "#fff",
-    text: "#322e52;",
+    text: "#1f1f24;",
   },
   tablet: "1200px",
   mobile: "787px",

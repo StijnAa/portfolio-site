@@ -10,7 +10,6 @@ import { hidden, auto } from "../styles/theme";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import Head from "next/head";
-import styled from "styled-components";
 
 function App({ Component, pageProps }) {
   const [displayNav, setNavState] = useState(false);

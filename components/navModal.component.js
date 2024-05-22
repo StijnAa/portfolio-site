@@ -57,7 +57,7 @@ const Nav = (props) => {
       bg: {
         opacity: 1,
         transition: {
-          duration: 0.5,
+          duration: 0.2,
           delay: 0,
         },
       },
@@ -66,7 +66,7 @@ const Nav = (props) => {
         opacity: 0,
         transition: {
           delay: 0,
-          duration: 0.75,
+          duration: 0.2,
         },
       },
 
@@ -138,7 +138,7 @@ const Nav = (props) => {
           initial="itemStart"
           exit="contentOut"
         >
-          Projects
+          Web
         </motion.h2>
 
         <ul>
@@ -158,19 +158,18 @@ const Nav = (props) => {
             initial="itemStart"
             exit="contentOut"
           >
-            <Link scroll={false} href="/projects/planter">
-              Planter (2022)
+            <Link scroll={false} href="/projects/socialCineville">
+              Social Cineville (2023)
             </Link>
           </motion.li>
-
           <motion.li
             variants={variants(2, 2)}
             animate="itemTween"
             initial="itemStart"
             exit="contentOut"
           >
-            <Link scroll={false} href="/projects/addetection">
-              Ad detection on dutch Television (2021)
+            <Link scroll={false} href="/projects/planter">
+              Planter (2022)
             </Link>
           </motion.li>
 
@@ -184,20 +183,28 @@ const Nav = (props) => {
               Kabeltjesshop (2020)
             </Link>
           </motion.li>
-
-          <motion.li
-            variants={variants(2, 4)}
+        </ul>
+        <ul>
+          <motion.h2
+            variants={variants(3, 0)}
             animate="itemTween"
             initial="itemStart"
             exit="contentOut"
           >
-            <Link scroll={false} href="/projects/graduationproject">
-              Lazyloading - Graduation Project (2020)
+            Hobby
+          </motion.h2>
+          <motion.li
+            variants={variants(4, 0)}
+            animate="itemTween"
+            initial="itemStart"
+            exit="contentOut"
+          >
+            <Link scroll={false} href="/projects/addetection">
+              AI - Ad detection on dutch Television (2021)
             </Link>
           </motion.li>
-
           <motion.li
-            variants={variants(2, 5)}
+            variants={variants(4, 1)}
             animate="itemTween"
             initial="itemStart"
             exit="contentOut"
@@ -207,7 +214,18 @@ const Nav = (props) => {
             </Link>
           </motion.li>
 
-          <motion.li
+          {/* <motion.li
+            variants={variants(2, 4)}
+            animate="itemTween"
+            initial="itemStart"
+            exit="contentOut"
+          >
+            <Link scroll={false} href="/projects/graduationproject">
+              Lazyloading - Graduation Project (2020)
+            </Link>
+          </motion.li> */}
+
+          {/* <motion.li
             variants={variants(2, 6)}
             animate="itemTween"
             initial="itemStart"
@@ -216,7 +234,7 @@ const Nav = (props) => {
             <Link scroll={false} href="/projects/overhoorbot">
               Overhoorbot (2019)
             </Link>
-          </motion.li>
+          </motion.li> */}
         </ul>
       </nav>
     </NavContainer>

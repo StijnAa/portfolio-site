@@ -15,8 +15,8 @@ export default function Home() {
         <Card
           title="Hi, I'm Stijn Aa"
           texts={[
-            "Thank you for visiting my website.",
-            "Here you can find information about me and my latest projects. Feel free to click around ;)",
+            "Welcome to my spot on the web.",
+            "Feel free to poke around and check out my projects. Enjoy!",
           ]}
           src="/img/IMG_3696_4x4.jpg"
         />

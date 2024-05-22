@@ -40,7 +40,7 @@ const GlobalStyles = createGlobalStyle`
         padding-inline-start: 0;
     }
     a {
-        color: #322e52;
+        color: #1f1f24;
         text-decoration: none; 
     }
     button {

@@ -13,8 +13,7 @@ export default function GraduationExperiment() {
     <>
       <Main>
         <Card
-          title="Don't look"
-          underline="Graduation experiment about curiosity"
+          title="Graduation experiment about curiosity"
           texts={[
             "Durring my graduation project I developed a couple of interesting installations centred around curiosity. This experiment was my favourite because of its simplicity and the funny reactions it produced.",
             "The premise: you always want to know what other people are looking at. So this installation takes advantages of that.",
@@ -28,12 +27,7 @@ export default function GraduationExperiment() {
           ]}
           src="/img/setup1.jpg"
         />
-        <Card
-          texts={[
-            "The reaction this confrontation with one’s own curiosity provokes is very funny.",
-          ]}
-          src="/img/setup2.jpg"
-        />
+        <Card texts={[""]} src="/img/setup2.jpg" />
       </Main>
     </>
   );

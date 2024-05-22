@@ -16,17 +16,15 @@ export default function Rijksoverheid() {
           title="PRO"
           underline="Platform Rijksoverheid"
           texts={[
-            "The Ministry of General Affairs’ Public Information and Communications Service (DPC) helps central government communicate with the public. ",
-            "For the online communications, we are working with a platform which serves as the base for over 500 department or topic-based government websites.",
+            "The Ministry of General Affairs’ Public Information and Communications Service (DPC) helps government organisations communicate with the public. ",
+            "The PRO platform serves as the base for over 500 department or topic-based government websites.",
             "As a front-end developer, I'm part of the team that is responsible for the development of this platform.",
           ]}
           src="/img/rijksoverheid.jpg"
         />
         <Card
           texts={[
-            "As part of the Helios team, I'm working on implementing new components and further developing the platform. ",
-            "In addition, as part of the accessibility working group, I'm actively contributes to keeping the platform accessible for everyone.",
-            ,
+            "The last 2 years we have rebuild the platform from the ground up.",
           ]}
           src="/img/ncsc.jpg"
         />

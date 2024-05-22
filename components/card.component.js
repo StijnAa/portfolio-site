@@ -30,7 +30,7 @@ const FlexContainer = styled.div`
   }
   &:only-child {
     justify-content: center;
-    text-align: center;
+    text-align: left;
   }
 
   @media only screen and (max-width: ${({ theme }) => theme.tablet}) {
@@ -64,6 +64,7 @@ const ImageContainer = styled.div`
 `;
 const TextContainer = styled.div`
   width: 500px;
+  max-width: 700px;
   display: flex;
   height: 400px;
   flex-direction: column;
@@ -85,11 +86,11 @@ const TextContainer = styled.div`
   article {
     p {
       font-size: 20px;
+      line-height: 30px;
       font-weight: 300;
       &:not(:last-child) {
         padding-bottom: 10px;
       }
-      padding-top: 10px;
     }
   }
   @media only screen and (max-width: ${({ theme }) => theme.tablet}) {
@@ -119,10 +120,11 @@ const Card = (props) => {
                   alt="alt"
                   width={imgHeight}
                   height={imgHeight}
-                  layout="responsive"
                   autoPlay
                   loop
                   muted
+                  controls
+                  playsInline
                 >
                   <source src={props.video} type="video/mp4" />
                 </video>
@@ -133,24 +135,28 @@ const Card = (props) => {
       ) : (
         ""
       )}
-      <FlexContainer>
-        <ComponentIn distance={120}>
-          <TextContainer>
-            {props.title && (
-              <header>
-                <h2>{props.title}</h2>
-                {props.link && <a href={props.link}>{props.linkText}</a>}
-                {props.underline && <p>{props.underline}</p>}
-              </header>
-            )}
-            <article>
-              {props.texts.map((paragraph, i) => {
-                return <p key={{ i }}>{paragraph}</p>;
-              })}
-            </article>
-          </TextContainer>
-        </ComponentIn>
-      </FlexContainer>
+      {((props.texts && props.texts.length > 0) || props.title) && (
+        <FlexContainer>
+          <ComponentIn distance={120}>
+            <TextContainer>
+              {props.title && (
+                <header>
+                  <h2>{props.title}</h2>
+                  {props.link && <a href={props.link}>{props.linkText}</a>}
+                  {props.underline && <p>{props.underline}</p>}
+                </header>
+              )}
+              {props.texts && (
+                <article>
+                  {props.texts.map((paragraph, i) => {
+                    return <p key={{ i }}>{paragraph}</p>;
+                  })}
+                </article>
+              )}
+            </TextContainer>
+          </ComponentIn>
+        </FlexContainer>
+      )}
     </StyledCard>
   );
 };
