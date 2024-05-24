@@ -1,6 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
-import React from "react"
 
 const PageOut = ({ children }) => {
     const variants = {

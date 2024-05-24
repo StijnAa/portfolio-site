@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-css-tags */
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
-import React from "react"
+import React from "react";
 
-const MyDocument = (props) => {
+function MyDocument(props) {
     return (
         <Html>
             <Head>
@@ -21,7 +21,7 @@ const MyDocument = (props) => {
             </body>
         </Html>
     );
-};
+}
 
 export async function getInitialProps(ctx) {
     const sheet = new ServerStyleSheet();

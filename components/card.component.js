@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styled from "styled-components";
-import React from "react";
 import ComponentIn from "./transitions/componentIn.transition";
 
 const imgHeight = 400;

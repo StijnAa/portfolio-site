@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { MarchingCubes, MarchingCube, MeshTransmissionMaterial, Environment, Bounds, Text } from "@react-three/drei";
+import { MarchingCubes, MarchingCube, Bounds } from "@react-three/drei";
 import { Physics, RigidBody, BallCollider } from "@react-three/rapier";
 
 function MetaBall({ color, vec = new THREE.Vector3(), ...props }) {
@@ -20,7 +20,7 @@ function MetaBall({ color, vec = new THREE.Vector3(), ...props }) {
     return (
         <RigidBody ref={api} colliders={false} linearDamping={4} angularDamping={0.95} {...props}>
             <MarchingCube strength={0.4} subtract={6} color={color} />
-            <BallCollider args={[0.1]} type="dynamic" />
+            <BallCollider args={[0.1]} />
         </RigidBody>
     );
 }
@@ -33,7 +33,6 @@ function Pointer({ vec = new THREE.Vector3() }) {
 
         const frequency = 0.3; // Change this value between 0 and 10 to adjust the frequency
         const oscillatingY = Math.cos(elapsedTime * frequency) / 0.5; // Adjust the multiplier for desired amplitude
-        console.log(oscillatingY);
         vec.set(pointer.x * (width / 2), oscillatingY, 0);
         if (ref.current) {
             ref.current.setNextKinematicTranslation(vec);

@@ -5,7 +5,7 @@
     },
     "plugins": ["@typescript-eslint", "eslint-comments", "import", "react", "react-hooks", "prettier"],
     "extends": [
-        // "plugin:@react-three",
+        "plugin:@react-three",
         "eslint:recommended",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
