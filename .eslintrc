@@ -1,0 +1,134 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    "plugins": ["@typescript-eslint", "eslint-comments", "import", "react", "react-hooks", "prettier"],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended",
+        "plugin:react/jsx-runtime",
+        "plugin:react-hooks/recommended",
+        "plugin:@next/next/recommended",
+        "prettier"
+    ],
+    "overrides": [
+        {
+            "files": ["*.js"],
+            "extends": ["plugin:@typescript-eslint/disable-type-checked"]
+        }
+    ],
+    "rules": {
+        "prettier/prettier": ["warn"],
+        "linebreak-style": ["warn", "unix"],
+        "no-console": [
+            "warn",
+            {
+                "allow": ["warn", "error", "info", "debug"]
+            }
+        ],
+        "default-case": ["error"],
+        "max-lines": [
+            "warn",
+            {
+                "max": 300
+            }
+        ],
+        "react/no-unescaped-entities": ["off"],
+        "react/prop-types": ["off"],
+        "react/no-multi-comp": ["warn"],
+        "react/self-closing-comp": ["warn"],
+        "react/jsx-curly-brace-presence": [
+            "warn",
+            {
+                "props": "never",
+                "children": "never",
+                "propElementValues": "always"
+            }
+        ],
+        "import/order": ["warn"],
+        "quotes": [
+            "warn",
+            "double",
+            {
+                "avoidEscape": true
+            }
+        ],
+        "eqeqeq": ["warn", "always"],
+        "@typescript-eslint/array-type": [
+            "warn",
+            {
+                "default": "array"
+            }
+        ],
+        "@next/next/no-img-element": "off",
+        "@typescript-eslint/no-namespace": "off",
+        "@typescript-eslint/no-unused-vars": ["warn"],
+        "@typescript-eslint/no-non-null-assertion": ["warn"],
+        "react/button-has-type": [
+            "warn",
+            {
+                "button": true,
+                "submit": true,
+                "reset": true
+            }
+        ],
+        "prefer-const": [
+            "warn",
+            {
+                "destructuring": "any",
+                "ignoreReadBeforeAssign": false
+            }
+        ],
+        "import/prefer-default-export": [
+            "warn",
+            {
+                "target": "single"
+            }
+        ],
+        "no-else-return": ["warn"],
+        "no-duplicate-imports": ["warn"],
+        "object-shorthand": ["warn", "always"],
+        "max-depth": ["warn", 3],
+        "no-template-curly-in-string": ["warn"],
+        "no-useless-concat": ["warn"],
+        "comma-dangle": ["warn", "always-multiline"],
+        "no-empty-pattern": [
+            "warn",
+            {
+                "allowObjectPatternsAsParameters": true
+            }
+        ],
+        "@typescript-eslint/ban-ts-comment": [
+            "warn",
+            {
+                "ts-expect-error": "allow-with-description",
+                "ts-ignore": true,
+                "ts-nocheck": true,
+                "ts-check": false,
+                "minimumDescriptionLength": 30
+            }
+        ],
+        "@typescript-eslint/no-unnecessary-condition": "warn",
+        "react/display-name": "warn",
+        "react/jsx-no-useless-fragment": "warn",
+        "react-hooks/rules-of-hooks": "warn",
+        "react-hooks/exhaustive-deps": "warn",
+        "eslint-comments/no-restricted-disable": [
+            "warn",
+            "@typescript-eslint/ban-ts-comment",
+            "react-hooks/exhaustive-deps"
+        ]
+    },
+    "env": {
+        "jest": true,
+        "node": true
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
+}
