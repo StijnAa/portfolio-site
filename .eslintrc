@@ -5,6 +5,7 @@
     },
     "plugins": ["@typescript-eslint", "eslint-comments", "import", "react", "react-hooks", "prettier"],
     "extends": [
+        // "plugin:@react-three",
         "eslint:recommended",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
@@ -38,7 +39,6 @@
         ],
         "react/no-unescaped-entities": ["off"],
         "react/prop-types": ["off"],
-        "react/no-multi-comp": ["warn"],
         "react/self-closing-comp": ["warn"],
         "react/jsx-curly-brace-presence": [
             "warn",

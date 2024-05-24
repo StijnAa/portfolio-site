@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
+import React from "react";
 import ComponentIn from "./transitions/componentIn.transition";
 
 const imgHeight = 400;
@@ -148,7 +149,7 @@ const Card = (props) => {
                             {props.texts && (
                                 <article>
                                     {props.texts.map((paragraph, i) => {
-                                        return <p key={{ i }}>{paragraph}</p>;
+                                        return <p key={i}>{paragraph}</p>;
                                     })}
                                 </article>
                             )}

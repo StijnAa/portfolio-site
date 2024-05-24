@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Card from "../../components/card.component";
+import React from "react"
 
 const Main = styled.main`
     height: 97vh;

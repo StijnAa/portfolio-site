@@ -72,6 +72,8 @@ const GlobalStyles = createGlobalStyle`
     margin-block-end: 0;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+
+    
 }
 `;
 
