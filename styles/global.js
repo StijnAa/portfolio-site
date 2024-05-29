@@ -52,6 +52,13 @@ const GlobalStyles = createGlobalStyle`
         cursor: pointer;
         outline: inherit;
     }
+    span{
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+    }
     h2 {
         display: block;
         font-size: 1.5em;

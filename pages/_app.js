@@ -38,9 +38,9 @@ function App({ Component, pageProps }) {
             <Head>
                 <title>Stijn Aa</title>
             </Head>
-            <AnimatePresence initial={true}>{displayNav && <Nav onPress={handleMenuButtonPress} />}</AnimatePresence>
+            <AnimatePresence initial={true}>{displayNav && <Nav onClick={handleMenuButtonPress} />}</AnimatePresence>
             <header>
-                <MenuButton onPress={handleMenuButtonPress} />
+                <MenuButton onClick={handleMenuButtonPress} />
             </header>
             <PageOut>
                 <Component {...pageProps} />

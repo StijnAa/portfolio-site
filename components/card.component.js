@@ -45,6 +45,7 @@ const FlexContainer = styled.div`
 `;
 
 const ImageContainer = styled.div`
+    aspect-ratio: 1 / 1;
     width: ${imgHeight}px;
     height: ${imgHeight}px;
     @media only screen and (max-width: ${({ theme }) => theme.tablet}) {
@@ -96,7 +97,6 @@ const TextContainer = styled.div`
         width: auto;
     }
 `;
-const StyledImage = styled(Image)``;
 
 const Card = (props) => {
     return (
@@ -106,12 +106,14 @@ const Card = (props) => {
                     <ComponentIn distance={80}>
                         <ImageContainer>
                             {props.src && (
-                                <StyledImage
+                                <Image
                                     src={props.src}
                                     alt="alt"
                                     width={imgHeight}
                                     height={imgHeight}
                                     layout="responsive"
+                                    objectFit="cover"
+                                    sizes="100vw"
                                 />
                             )}
                             {props.video && (

@@ -16,6 +16,12 @@ const ButtonContainer = styled.div`
         margin-left: 20px;
         margin-top: 50px;
     }
+    button{
+        width:100px;
+        height:80px;
+        text-align: left;
+    }
+
 `;
 
 const MenuButton = (props) => {
@@ -26,20 +32,21 @@ const MenuButton = (props) => {
         <ComponentIn>
             <ButtonContainer>
                 <AnimatePresence initial={true}>
-                    <motion.button
+                    <button
                         {...buttonProps}
                         ref={ref}
-                        initial={{ letterSpacing: "5px" }}
+                        
+                    >
+                        <motion.span
+                        initial={{ letterSpacing: "8px" }}
                         whileTap={{
                             letterSpacing: "-2px",
                             transition: {
                                 duration: 0.05,
                             },
                         }}
-                        transition={{ duration: 3 }}
-                    >
-                        /Aa
-                    </motion.button>
+                        transition={{ duration: 3 }}>/Aa</motion.span>
+                    </button>
                 </AnimatePresence>
             </ButtonContainer>
         </ComponentIn>

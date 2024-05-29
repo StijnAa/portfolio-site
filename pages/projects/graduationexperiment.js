@@ -14,19 +14,23 @@ export default function GraduationExperiment() {
             <Card
                 title="Graduation experiment about curiosity"
                 texts={[
-                    "Durring my graduation project I developed a couple of interesting installations centred around curiosity. This experiment was my favourite because of its simplicity and the funny reactions it produced.",
-                    "The premise: you always want to know what other people are looking at. So this installation takes advantages of that.",
+                    "During my graduation project, I made several experiments designed around curiosity. This installation quickly became my favorite due to its simplicity and the hilarious reactions it sparked.",
+                    "The premise is simple: we all want to know what others are looking at. This installation cleverly takes advantage of that urge.",
                 ]}
                 video="/img/box.mp4"
             />
             <Card
                 texts={[
-                    "The setup involves a cube with a webcam inside. And a screen on the wall. When you walk by you see a picture from someone looking inside the cube. Your curiosity will push you to look inside the cube and see what the person on the photo saw. But when you do, a photo is taken of your face and displayed on the screen confronting you with your action.",
-                    "Now your face is being used for attentions and it only go’s away if a new person is curious enough.",
+                    "The setup features a cube with a hidden webcam inside and a screen mounted on the wall. As you walk by, you notice a picture of someone peeking into the cube. This sparks your curiosity, compelling you to look inside. The moment you do, the webcam captures your face, and your photo appears on the screen, confronting you with your action and by extend your curiousity.",
+                    "Now, your face is on display, and it remains there until another curious passerby takes a look inside the cube, replacing your image with theirs.",
+                    "Is like a combination of clickbait and hot potato :)",
                 ]}
                 src="/img/setup1.jpg"
             />
-            <Card texts={[""]} src="/img/setup2.jpg" />
+            <Card
+                texts={["The tech stack behind this setup uses Python and the OpenCV facial recognition library"]}
+                src="/img/setup2.jpg"
+            />
         </Main>
     );
 }

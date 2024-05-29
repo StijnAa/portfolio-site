@@ -117,68 +117,51 @@ const Nav = () => {
                 </ul>
 
                 <motion.h2 variants={variants(1, 0)} animate="itemTween" initial="itemStart" exit="contentOut">
-                    Web
+                    Work
                 </motion.h2>
 
                 <ul>
-                    <motion.li variants={variants(2, 0)} animate="itemTween" initial="itemStart" exit="contentOut">
+                    <motion.li variants={variants(1, 1)} animate="itemTween" initial="itemStart" exit="contentOut">
                         <Link scroll={false} href="/projects/rijksoverheid">
                             Platform Rijksoverheid (2022)
                         </Link>
                     </motion.li>
-                    <motion.li variants={variants(2, 1)} animate="itemTween" initial="itemStart" exit="contentOut">
-                        <Link scroll={false} href="/projects/socialCineville">
-                            Social Cineville (2023)
-                        </Link>
-                    </motion.li>
-                    <motion.li variants={variants(2, 2)} animate="itemTween" initial="itemStart" exit="contentOut">
+                    <motion.li variants={variants(1, 2)} animate="itemTween" initial="itemStart" exit="contentOut">
                         <Link scroll={false} href="/projects/planter">
                             Planter (2022)
                         </Link>
                     </motion.li>
 
-                    <motion.li variants={variants(2, 3)} animate="itemTween" initial="itemStart" exit="contentOut">
-                        <Link scroll={false} href="/projects/kabeltjesshop">
-                            Kabeltjesshop (2020)
-                        </Link>
-                    </motion.li>
                 </ul>
-                <ul>
-                    <motion.h2 variants={variants(3, 0)} animate="itemTween" initial="itemStart" exit="contentOut">
+                    <motion.h2 variants={variants(2, 0)} animate="itemTween" initial="itemStart" exit="contentOut">
                         Hobby
                     </motion.h2>
-                    <motion.li variants={variants(4, 0)} animate="itemTween" initial="itemStart" exit="contentOut">
+                <ul>
+                    <motion.li variants={variants(2, 1)} animate="itemTween" initial="itemStart" exit="contentOut">
+                        <Link scroll={false} href="/projects/socialCineville">
+                            Web - Social Cineville (2023)
+                        </Link>
+                    </motion.li>
+                    <motion.li variants={variants(2, 2)} animate="itemTween" initial="itemStart" exit="contentOut">
+                        <Link scroll={false} href="/projects/kabeltjesshop">
+                            Web - Kabeltjesshop (2020)
+                        </Link>
+                    </motion.li>
+                    <motion.li variants={variants(2, 3)} animate="itemTween" initial="itemStart" exit="contentOut">
+                        <Link scroll={false} href="/projects/aaaaaaaaaa">
+                           Design - T-shirt (2023)
+                        </Link>
+                    </motion.li>
+                    <motion.li variants={variants(2, 4)} animate="itemTween" initial="itemStart" exit="contentOut">
                         <Link scroll={false} href="/projects/addetection">
-                            AI - Ad detection on dutch Television (2021)
+                            ML - Ad detection on dutch Television (2021)
                         </Link>
                     </motion.li>
-                    <motion.li variants={variants(4, 1)} animate="itemTween" initial="itemStart" exit="contentOut">
+                    <motion.li variants={variants(2, 5)} animate="itemTween" initial="itemStart" exit="contentOut">
                         <Link scroll={false} href="/projects/graduationexperiment">
-                            Dont look - Graduation Experiment (2019)
+                            ML - Graduation Experiment (2019)
                         </Link>
                     </motion.li>
-
-                    {/* <motion.li
-            variants={variants(2, 4)}
-            animate="itemTween"
-            initial="itemStart"
-            exit="contentOut"
-          >
-            <Link scroll={false} href="/projects/graduationproject">
-              Lazyloading - Graduation Project (2020)
-            </Link>
-          </motion.li> */}
-
-                    {/* <motion.li
-            variants={variants(2, 6)}
-            animate="itemTween"
-            initial="itemStart"
-            exit="contentOut"
-          >
-            <Link scroll={false} href="/projects/overhoorbot">
-              Overhoorbot (2019)
-            </Link>
-          </motion.li> */}
                 </ul>
             </nav>
         </NavContainer>
