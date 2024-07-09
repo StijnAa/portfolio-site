@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import * as THREE from "three";
 import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
@@ -28,7 +29,7 @@ function MetaBall({ color, vec = new THREE.Vector3(), ...props }) {
 function Pointer({ vec = new THREE.Vector3() }) {
     const ref = useRef();
     useFrame(({ pointer, viewport, clock }) => {
-        const { width, height } = viewport.getCurrentViewport();
+        const { width } = viewport.getCurrentViewport();
         const elapsedTime = clock.getElapsedTime();
 
         const frequency = 0.3; // Change this value between 0 and 10 to adjust the frequency
