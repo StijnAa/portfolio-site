@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { AnimatePresence } from "framer-motion";
 import { ThemeProvider } from "styled-components";
 import { useRouter } from "next/router";
@@ -9,6 +9,7 @@ import { hidden, auto } from "../styles/theme";
 import Nav from "../components/navModal.component";
 import PageOut from "../components/transitions/pageOut.transition";
 import LavaLamp from "../components/lavalamp";
+import Grain from "../components/grain";
 
 function App({ Component, pageProps }) {
     const [displayNav, setNavState] = useState(false);
@@ -18,7 +19,7 @@ function App({ Component, pageProps }) {
     const [themeState, setThemeState] = useState(auto);
 
     const router = useRouter();
-
+    const grainTextureRef = useRef();
     const setNav = () => {
         setNavState(!displayNav);
         setThemeState(!displayNav ? hidden : auto);
@@ -42,10 +43,12 @@ function App({ Component, pageProps }) {
             <header>
                 <MenuButton onClick={handleMenuButtonPress} />
             </header>
+            <div ref={grainTextureRef} className="grain-texture" />
             <PageOut>
                 <Component {...pageProps} />
             </PageOut>
             <LavaLamp />
+            <Grain texture={grainTextureRef} />
         </ThemeProvider>
     );
 }

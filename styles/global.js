@@ -44,6 +44,7 @@ const GlobalStyles = createGlobalStyle`
         text-decoration: none; 
     }
     button {
+        pointer-events: auto;
         background: none;
         color: inherit;
         border: none;
@@ -79,9 +80,45 @@ const GlobalStyles = createGlobalStyle`
     margin-block-end: 0;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    }
 
-    
-}
+    .react-p5{
+        position:fixed;
+    }
+
+    .grain-texture {
+        pointer-events: none;
+        filter: grayscale(1);
+        opacity: 78%;
+        position: fixed;
+        z-index: -99;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("/img/texture.jpg");
+        background-repeat: repeat repeat;
+        background-size: 128px 128px;
+        mix-blend-mode: overlay;
+        scale: 2;
+    }
+
+    .blinds rect{   
+        cursor: pointer;
+        shape-rendering: crispEdges;
+        fill: url(#MyGradient);
+    }
+    .blinds .gradiant{
+        position: "fixed";
+        top: 0;
+        left: 0;
+        width: "100vw";
+        height: "100vh";
+        z-index: "1";
+        opacity: "0.4";
+    }
 `;
 
 export default GlobalStyles;

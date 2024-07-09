@@ -18,7 +18,7 @@ export default function Planter() {
                 texts={[
                     "Planter.nl is a website I'm building for a friend. It's going to be a webshop where you can customize and order planters for your garden, balcony, or rooftop garden.",
                 ]}
-                src="/img/planter.jpg"
+                src="/img/planter.png"
             />
         </Main>
     );

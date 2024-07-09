@@ -40,7 +40,7 @@ function Pointer({ vec = new THREE.Vector3() }) {
     });
     return (
         <RigidBody type="kinematicPosition" colliders={false} ref={ref}>
-            <MarchingCube strength={1} subtract={15} color="white" />
+            <MarchingCube strength={1} subtract={15} color="#3d5aa4" />
             <BallCollider args={[0.1]} type="dynamic" />
         </RigidBody>
     );
@@ -54,13 +54,12 @@ export default function LavaLamp() {
                 <Physics gravity={[0, 4, 0]}>
                     <MarchingCubes resolution={80} maxPolyCount={20000} enableUvs={false} enableColors>
                         <meshStandardMaterial vertexColors thickness={15} roughness={0} />
-                        <MetaBall color="white" position={[0.2, 0.2, 0.2]} />
-                        <MetaBall color="white" position={[-0.2, -0, -0]} />
+                        <MetaBall color="red" position={[0.2, 0.2, 0.2]} />
                         <MetaBall color="#3d5aa4" position={[0.4, 0.2, 0.5]} />
-                        <MetaBall color="white" position={[0.4, -0.2, 0.4]} />
+                        <MetaBall color="#3d22a4" position={[0.4, -0.2, 0.4]} />
                         <MetaBall color="white" position={[-0.2, -0.4, -0]} />
-                        <MetaBall color="white" position={[0.2, 0, 0.4]} />
-                        <MetaBall color="white" position={[-0.2, -0.4, -0.5]} />
+                        <MetaBall color="green" position={[0.2, 0, 0.4]} />
+                        <MetaBall color="yellow" position={[-0.2, -0.4, -0.5]} />
                         <Pointer />
                     </MarchingCubes>
                 </Physics>

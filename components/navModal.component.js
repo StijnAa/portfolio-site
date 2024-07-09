@@ -131,11 +131,10 @@ const Nav = () => {
                             Planter (2022)
                         </Link>
                     </motion.li>
-
                 </ul>
-                    <motion.h2 variants={variants(2, 0)} animate="itemTween" initial="itemStart" exit="contentOut">
-                        Hobby
-                    </motion.h2>
+                <motion.h2 variants={variants(2, 0)} animate="itemTween" initial="itemStart" exit="contentOut">
+                    Hobby
+                </motion.h2>
                 <ul>
                     <motion.li variants={variants(2, 1)} animate="itemTween" initial="itemStart" exit="contentOut">
                         <Link scroll={false} href="/projects/socialCineville">
@@ -143,21 +142,26 @@ const Nav = () => {
                         </Link>
                     </motion.li>
                     <motion.li variants={variants(2, 2)} animate="itemTween" initial="itemStart" exit="contentOut">
+                        <Link scroll={false} href="/projects/gpt3opreis">
+                            Web - GPT-3-op-Reis (2022)
+                        </Link>
+                    </motion.li>
+                    <motion.li variants={variants(2, 3)} animate="itemTween" initial="itemStart" exit="contentOut">
                         <Link scroll={false} href="/projects/kabeltjesshop">
                             Web - Kabeltjesshop (2020)
                         </Link>
                     </motion.li>
-                    <motion.li variants={variants(2, 3)} animate="itemTween" initial="itemStart" exit="contentOut">
+                    <motion.li variants={variants(2, 4)} animate="itemTween" initial="itemStart" exit="contentOut">
                         <Link scroll={false} href="/projects/aaaaaaaaaa">
-                           Design - T-shirt (2023)
+                            Design - T-shirt (2023)
                         </Link>
                     </motion.li>
-                    <motion.li variants={variants(2, 4)} animate="itemTween" initial="itemStart" exit="contentOut">
+                    <motion.li variants={variants(2, 5)} animate="itemTween" initial="itemStart" exit="contentOut">
                         <Link scroll={false} href="/projects/addetection">
                             ML - Ad detection on dutch Television (2021)
                         </Link>
                     </motion.li>
-                    <motion.li variants={variants(2, 5)} animate="itemTween" initial="itemStart" exit="contentOut">
+                    <motion.li variants={variants(2, 6)} animate="itemTween" initial="itemStart" exit="contentOut">
                         <Link scroll={false} href="/projects/graduationexperiment">
                             ML - Graduation Experiment (2019)
                         </Link>

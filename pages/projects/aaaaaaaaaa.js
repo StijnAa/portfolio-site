@@ -14,14 +14,14 @@ export default function TshirtDesign() {
             <Card
                 title="T-shirt design"
                 texts={[
-                    "I've always wanted to create my own t-shirt, so in the summer of 2023, I began designing my first shirt and a friend and I took a workshop on screenprinting.",
+                    "I've always wanted to create my own t-shirt, so in the summer of 2023, I began designing my first shirt and took a workshop on screen printing.",
                     "This spring, I printed and sold 30 pieces.",
                 ]}
                 src="/img/tshirt-1.jpg"
             />
             <Card
                 texts={[
-                    "Since my last name is Aa, I thought it would be fun to create designs where the character ends by saying 'Aaaaaaaa…'",
+                    "Since my last name is Aa, I thought it would be fun to create designs where the character Gérard ends by saying 'Aaaaaaaa…'",
                 ]}
                 src="/img/tshirt-2.jpg"
             />
