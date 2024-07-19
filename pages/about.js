@@ -17,7 +17,7 @@ export default function About() {
                     "My name is Stijn Aa, I'm a front-end developer living in Amsterdam.",
                     "If you would like to get in touch with me, you can always email me at stijnaa@gmail.com",
                 ]}
-                src="/img/IMG_3696_4x4.jpg"
+                src="/img/IMG_1545.jpg"
             />
             <Card
                 texts={[
