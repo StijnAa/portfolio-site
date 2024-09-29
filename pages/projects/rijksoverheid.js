@@ -12,8 +12,9 @@ export default function Rijksoverheid() {
     return (
         <Main>
             <Card
-                title="PRO"
-                underline="Platform Rijksoverheid"
+                title="Platform Rijksoverheid Online"
+                linkText="Link"
+                link="https://www.platformrijksoverheidonline.nl/"
                 texts={[
                     "The Ministry of General Affairs’ Public Information and Communications Service (DPC) helps government organisations communicate with the public. ",
                     "The PRO platform serves as the base for over 500 department or topic-based government websites.",
