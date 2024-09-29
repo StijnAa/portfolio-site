@@ -138,7 +138,7 @@ const Nav = () => {
                 <ul>
                     <motion.li variants={variants(2, 1)} animate="itemTween" initial="itemStart" exit="contentOut">
                         <Link scroll={false} href="/projects/ios-app">
-                            Ios - Wireless Microphone (2024)
+                            iOS - Wireless Microphone (2024)
                         </Link>
                     </motion.li>
                     <motion.li variants={variants(2, 2)} animate="itemTween" initial="itemStart" exit="contentOut">
