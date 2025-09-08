@@ -116,57 +116,54 @@ const Nav = () => {
                     </motion.li>
                 </ul>
 
-                <motion.h2 variants={variants(1, 0)} animate="itemTween" initial="itemStart" exit="contentOut">
-                    Work
-                </motion.h2>
-
-                <ul>
-                    <motion.li variants={variants(1, 1)} animate="itemTween" initial="itemStart" exit="contentOut">
-                        <Link scroll={false} href="/projects/rijksoverheid">
-                            Platform Rijksoverheid (2022)
-                        </Link>
-                    </motion.li>
-                    <motion.li variants={variants(1, 2)} animate="itemTween" initial="itemStart" exit="contentOut">
-                        <Link scroll={false} href="/projects/planter">
-                            Planter (2022)
-                        </Link>
-                    </motion.li>
-                </ul>
                 <motion.h2 variants={variants(2, 0)} animate="itemTween" initial="itemStart" exit="contentOut">
                     Hobby
                 </motion.h2>
                 <ul>
                     <motion.li variants={variants(2, 1)} animate="itemTween" initial="itemStart" exit="contentOut">
+                        <Link scroll={false} href="/projects/planter">
+                            Planter (2022)
+                        </Link>
+                    </motion.li>
+                    <motion.li variants={variants(2, 2)} animate="itemTween" initial="itemStart" exit="contentOut">
+                        <Link
+                            scroll={false}
+                            href="https://apps.apple.com/us/app/dice-3d-roll-virtual-dice/id6748648622"
+                        >
+                            iOS - Dice Roller: 3D (2025)
+                        </Link>
+                    </motion.li>
+                    <motion.li variants={variants(2, 3)} animate="itemTween" initial="itemStart" exit="contentOut">
                         <Link scroll={false} href="/projects/ios-app">
                             iOS - Wireless Microphone (2024)
                         </Link>
                     </motion.li>
-                    <motion.li variants={variants(2, 2)} animate="itemTween" initial="itemStart" exit="contentOut">
+                    <motion.li variants={variants(2, 4)} animate="itemTween" initial="itemStart" exit="contentOut">
                         <Link scroll={false} href="/projects/socialCineville">
                             Web - Social Cineville (2023)
                         </Link>
                     </motion.li>
-                    <motion.li variants={variants(2, 3)} animate="itemTween" initial="itemStart" exit="contentOut">
+                    <motion.li variants={variants(2, 5)} animate="itemTween" initial="itemStart" exit="contentOut">
                         <Link scroll={false} href="/projects/gpt3opreis">
                             Web - GPT-3-op-Reis (2022)
                         </Link>
                     </motion.li>
-                    <motion.li variants={variants(2, 4)} animate="itemTween" initial="itemStart" exit="contentOut">
+                    <motion.li variants={variants(2, 6)} animate="itemTween" initial="itemStart" exit="contentOut">
                         <Link scroll={false} href="/projects/kabeltjesshop">
                             Web - Kabeltjesshop (2020)
                         </Link>
                     </motion.li>
-                    <motion.li variants={variants(2, 5)} animate="itemTween" initial="itemStart" exit="contentOut">
+                    <motion.li variants={variants(2, 7)} animate="itemTween" initial="itemStart" exit="contentOut">
                         <Link scroll={false} href="/projects/aaaaaaaaaa">
                             Design - T-shirt (2023)
                         </Link>
                     </motion.li>
-                    <motion.li variants={variants(2, 6)} animate="itemTween" initial="itemStart" exit="contentOut">
+                    <motion.li variants={variants(2, 8)} animate="itemTween" initial="itemStart" exit="contentOut">
                         <Link scroll={false} href="/projects/addetection">
                             ML - Ad detection on dutch Television (2021)
                         </Link>
                     </motion.li>
-                    <motion.li variants={variants(2, 7)} animate="itemTween" initial="itemStart" exit="contentOut">
+                    <motion.li variants={variants(2, 9)} animate="itemTween" initial="itemStart" exit="contentOut">
                         <Link scroll={false} href="/projects/graduationexperiment">
                             ML - Graduation Experiment (2019)
                         </Link>
